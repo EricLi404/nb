@@ -1,4 +1,4 @@
 
-conda install flake8
-conda install isort
-conda install yapf
+conda install flake8 -y
+conda install isort -y
+conda install yapf -y
