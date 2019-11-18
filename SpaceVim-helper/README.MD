@@ -13,6 +13,13 @@ sudo apt-get install python3-neovim
 ```
 brew install neovim
 ```
+## centos7 
+
+```
+yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum install -y neovim python3-neovim
+```
+
 # anaconda
 
 [下载shell安装](https://www.anaconda.com/distribution/)
