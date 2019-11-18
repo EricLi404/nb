@@ -40,4 +40,7 @@
 0 <= k <= 100
 ```
 
-
+```
+class Solution:
+    def shiftGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:
+```
