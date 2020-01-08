@@ -1,4 +1,5 @@
 class Solution:
+    # TODO
     # def xorQueries(self, arr: List[int], queries: List[List[int]]) -> List[int]:
     def xorQueries(self, arr, queries):
         r = []
