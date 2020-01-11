@@ -1,0 +1,11 @@
+Host jqcloud
+    HostName j.ushow.media
+    Port 5822
+    User yvyang.li
+    ServerAliveInterval 80
+
+Host box
+    HostName liyvyang.box.ushow.media
+    Port 5822
+    User liyvyang
+    ServerAliveInterval 50000
