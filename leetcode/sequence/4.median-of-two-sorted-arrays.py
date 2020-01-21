@@ -4,10 +4,7 @@ class Solution:
         n = nums1 + nums2
         n.sort()
         l = len(n)
-        if l % 2 == 1:
-            return n[l // 2]
-        else:
-            return (n[l // 2] + n[l // 2 - 1]) / 2
+        return n[l // 2] if l % 2 == 1 else (n[l // 2] + n[l // 2 - 1]) / 2
 
 
 if __name__ == '__main__':
