@@ -9,9 +9,8 @@ class Solution:
         s = 0
         while i < j:
             ns = (j - i) * min(height[i], height[j])
-            print(i, j, " | ", height[i], height[j], " | ", ns)
             s = ns if ns > s else s
-            if i <= j:
+            if height[i] <= height[j]:
                 i += 1
             else:
                 j -= 1
