@@ -6,6 +6,20 @@ def bubble_sort(nums):
     return nums
 
 
+def quick_sort(nums):
+    if len(nums) < 1:
+        return nums
+    p = nums[0]
+    l = []
+    r = []
+    for i in nums:
+        if i < p:
+            l.append(i)
+        elif i > p:
+            r.append(i)
+    return quick_sort(l) + [p] + quick_sort(r)
+
+
 def selection_sort(nums):
     for i in range(len(nums) - 1):
         mik = i
@@ -27,16 +41,7 @@ def BubbleSort(lst):
                 (lst[j], lst[j + 1]) = (lst[j + 1], lst[j])
 
 
-def quickSort(nums):
-    if len(nums) <= 1:
-        return nums
-    pivot = nums[0]
-    left = [nums[i] for i in range(1, len(nums)) if nums[i] < pivot]
-    right = [nums[i] for i in range(1, len(nums)) if nums[i] >= pivot]
-    return quickSort(left) + [pivot] + quickSort(right)
-
-
 if __name__ == '__main__':
-    ll = [3, 2, 4, 7, 1]
+    ll = [4, 8, 1, 3, 2, 9, 7]
     # print(bubble_sort(ll))
-    print(quickSort(ll))
+    print(quick_sort(ll))
