@@ -51,6 +51,23 @@ def f2(s):
     return m
 
 
+def longest_substr(s):
+    dic = {}
+    start, maxlen, substr = 0, 0, ""
+
+    for i, x in enumerate(s):
+        if x in dic:
+            start = max(dic[x] + 1, start)
+            dic[x] = i
+        else:
+            dic[x] = i
+
+        if i - start + 1 > maxlen:
+            maxlen = i - start + 1
+            substr = s[start:i + 1]
+    return substr
+
+
 if __name__ == '__main__':
     c = f1("abcabcbb")
     # c = f1("abcbefgf")

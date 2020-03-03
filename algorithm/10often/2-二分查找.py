@@ -1,9 +1,9 @@
-def bs(nums,t):
-    s,e = 0,len(nums)-1
+def bs(nums, t):
+    s, e = 0, len(nums) - 1
     while True:
-        if e-s <=1:
+        if e - s <= 1:
             return e if e == t else s
-        mid = (s+e)//2
+        mid = (s + e) // 2
         if mid <= t:
             s = mid
         else:

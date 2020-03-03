@@ -24,11 +24,12 @@ def max_sub_array(arr):
     :return:
     """
     n = len(arr)
-    maxi,maxall = arr[0],arr[0]
-    for i in range(1,n):
-        maxi = max(arr[i],maxi + arr[i])
-        maxall = max(maxall,maxi)
-    return(maxall)
+    maxi, maxall = arr[0], arr[0]
+    for i in range(1, n):
+        maxi = max(arr[i], maxi + arr[i])
+        maxall = max(maxall, maxi)
+    return (maxall)
+
 
 if __name__ == '__main__':
     c = f([1, 5, -10, 2, 5, -3, 2, 6, -3, 1])
