@@ -1,6 +1,10 @@
+# 不使用额外辅助，将一个栈逆序
+
+
 from typing import List
 
 
+# 原理： 使用程序调用栈记录信息，反转栈
 def gb(stack: List):
     a = stack.pop()
     if not stack:
