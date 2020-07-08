@@ -6,21 +6,13 @@ ZSH_THEME="astro"
 
 plugins=(
   git
-  sublime 
   wd
-  extract
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
 
-bindkey '\' autosuggest-accept
 
-alias vi='nvim'
-alias vim='nvim'
-alias vvim='/usr/bin/vim'
-alias jq='ssh jqcloud;'
-alias box='ssh box;'
 alias py='python'
 alias gll='git log --oneline --decorate --graph --pretty='\''%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\'' --all'

@@ -1,0 +1,7 @@
+
+git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+
+git clone git://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+
+git clone https://github.com/iplaces/astro-zsh-theme.git
+Copy astro.zsh-theme file into the ~/.oh-my-zsh/themes/ directory.
