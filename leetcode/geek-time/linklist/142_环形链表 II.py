@@ -47,10 +47,18 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
-from .func import ListNode, arr2linklist, iterate_linklist
+from .func import ListNode
+
 
 class Solution:
     def detectCycle(self, head: ListNode) -> ListNode:
-        pass
-        
-# leetcode submit region end(Prohibit modification and deletion)
+        if head is None or head.next is None:
+            return None
+        s = head
+        f = head.next
+        while s != f:
+            if f is None or f.next is None:
+                return None
+            s = s.next
+            f = f.next.next
+        return s
