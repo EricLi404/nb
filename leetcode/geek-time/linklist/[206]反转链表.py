@@ -13,24 +13,24 @@
 
 # leetcode submit region begin(Prohibit modification and deletion)
 # Definition for singly-linked list.
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+
+from .func import ListNode, arr2linklist, iterate_linklist
 
 
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
         pre = ListNode(0)
+        p = pre
+        h = head
         while head.next is not None:
-            h = head
-            h.next = pre.next
-            pre.next = h
+            h.next = p.next
+            p.next = h
         return pre.next
 
-def arr2linklist(arr):
-    root = ListNode(arr.pop(0))
-    p = root
-    for i in arr:
 
 if __name__ == '__main__':
+    l = arr2linklist([1, 2, 3, 4])
+    iterate_linklist(l)
+    s = Solution()
+    ll = s.reverseList(l)
+    iterate_linklist(ll)
