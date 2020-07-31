@@ -23,5 +23,7 @@ func Test_reverseList(t *testing.T) {
 	// 	})
 	// }
 	ll := GetOneListNode([]int{1, 2, 3, 4})
-	Display(ll)
+	// Display(ll)
+	rl := reverseList(ll)
+	Display(rl)
 }

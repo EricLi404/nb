@@ -16,17 +16,20 @@ package linklist
 
 func reverseList(head *ListNode) *ListNode {
 	pre := ListNode{
-		Val:  0,
+		Val:  head.Val,
 		Next: nil,
 	}
+
+	head =head.Next
 
 	for head != nil {
 		m := pre
 		t := ListNode{
 			Val:  head.Val,
-			Next: &m,
+			Next: nil,
 		}
 		pre.Next = &t
+		pre.Next.Next = &m
 		head = head.Next
 	}
 	return pre.Next
